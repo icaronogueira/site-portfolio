@@ -1,1 +1,7 @@
-<p>navigation works!</p>
+<ul class="flex flex-col">
+    <li *ngFor="let section of sections"
+        [ngClass]="{'text-white' : currentSection === section}"
+        (click)="onNavigate(section)">
+        {{section}}
+    </li>
+</ul>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  currentSection: string='About';
+
+  @Output() navigate = new EventEmitter<string>();
+
+  sections=['About', 'Skills', 'Experience', 'Projects'];
+
+  onNavigate(section: string):void {
+    this.navigate.emit(section);
+  }
+  
 }

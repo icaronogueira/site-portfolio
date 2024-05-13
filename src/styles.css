@@ -8,3 +8,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+*{
+    font-family: 'inter';
+    color: rgb(238, 232, 232);
+}
