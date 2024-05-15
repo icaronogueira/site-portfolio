@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { GlowingCursorComponent } from './glowing-cursor/glowing-cursor.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SkillsComponent } from './skills/skills.component';
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    GlowingCursorComponent
   ],
   imports: [
     BrowserModule,
