@@ -23,9 +23,25 @@
             
         </div>
 
-        <!--Navegação-->
+        
+        
+        
 
-        <app-navigation (navigate)="scrollToSection($event)"></app-navigation>
+        <!--Navegação-->
+        <div class="flex">
+            <div class="invisible">
+                <div class="relative w-14 h-14">
+                    <img class="rounded-full absolute inset-0 object-cover" src="../assets/avatar.png" alt="avatar">
+                    <img class="w-4 h-3 bottom-0 right-0 absolute" src="../assets/brasil.png" alt="bandeira">
+                </div>
+                
+            </div>
+            <div class="ml-4">
+                <app-navigation (navigate)="scrollToSection($event)"></app-navigation>
+            </div>
+
+        </div>
+        
         
         <!--Ícones redes sociais-->
         <div>Redes Sociais</div>
@@ -35,16 +51,16 @@
 
     <!--Lado direito-->
     <div class="w-1/2 overflow-y-auto pe-20 pt-24 justify-start">
-        <section id="About">
+        <section id="ABOUT">
             <app-about></app-about>
         </section>
-        <section id="Skills">
+        <section id="SKILLS">
             <app-skills></app-skills>
         </section>
-        <section id="Experience">
+        <section id="EXPERIENCE">
             <app-experience></app-experience>
         </section>
-        <section id="Projects">
+        <section id="PROJECTS">
             <app-projects></app-projects>
         </section>
     </div>

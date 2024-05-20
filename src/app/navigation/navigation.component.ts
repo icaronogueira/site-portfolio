@@ -11,7 +11,7 @@ export class NavigationComponent {
 
   @Output() navigate = new EventEmitter<string>();
 
-  sections=['About', 'Skills', 'Experience', 'Projects'];
+  sections=['ABOUT', 'SKILLS', 'EXPERIENCE', 'PROJECTS'];
 
   onNavigate(section: string):void {
     this.currentSection=section;
