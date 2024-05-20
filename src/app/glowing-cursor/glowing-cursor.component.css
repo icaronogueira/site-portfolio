@@ -25,6 +25,6 @@
 .glowing-cursor.glow {
     width: 1px;
     height: 1px;
-    opacity: 0.2;
+    opacity: 0.3;
     transform: translate(-50%, -50%);
 }
