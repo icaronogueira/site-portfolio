@@ -3,30 +3,34 @@
     <app-glowing-cursor></app-glowing-cursor>
 
     <!--Lado esquerdo-->
-    <div class="w-1/2 flex flex-col items-center justify-center p-8">
-        <!--avatar e bandeira-->
-        <div class="flex place-items-end mb-4">
-            <img class="rounded-full w-28 h-28" src="../assets/avatar.png" alt="avatar">
-            <img class="w-6 h-4 " src="../assets/brasil.png" alt="bandeira">
+    <div class="w-1/2 flex flex-col items-start justify-evenly p-8 ml-24">
+        <!--cabeçalho-->
+        <div class="flex items-center">
+            <div class="flex place-items-end mb-4">
+                <img class="rounded-full w-14 h-14" src="../assets/avatar.png" alt="avatar">
+                <img class="w-4 h-3 " src="../assets/brasil.png" alt="bandeira">
+            </div>
+
+            
+            <h1 class="text-5xl font-bold tracking-tight ml-4 sm:text5xl text-slate-200">Ícaro Nogueira</h1>
         </div>
 
-        <!--Nome, cargo e descrição-->
-        <h1 class="text-3xl font-bold mb-2">Ícaro Nogueira</h1>
-        <h3 class="text-xl mb-4">Machine Learning Engineer</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex.</p>
-
+        <div>
+            <h3 class="text-xl mb-4">Machine Learning Engineer</h3>
+            <p>I build robust models that unlock actionable insights for data-driven business decisions.</p>
+        </div>
         <!--Navegação-->
 
         <app-navigation (navigate)="scrollToSection($event)"></app-navigation>
         
         <!--Ícones redes sociais-->
-        <div></div>
+        <div>Redes Sociais</div>
     
     </div>
 
 
     <!--Lado direito-->
-    <div class="w-1/2 overflow-y-auto px-8 py-16">
+    <div class="w-1/2 overflow-y-auto px-8 py-16 justify-start">
         <section id="About">
             <app-about></app-about>
         </section>
