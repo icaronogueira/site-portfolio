@@ -14,6 +14,7 @@ export class NavigationComponent {
   sections=['About', 'Skills', 'Experience', 'Projects'];
 
   onNavigate(section: string):void {
+    this.currentSection=section;
     this.navigate.emit(section);
   }
   
